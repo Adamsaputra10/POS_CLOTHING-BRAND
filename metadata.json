@@ -1,0 +1,6 @@
+{
+  "name": "ILYASVIEL APPAREL POS",
+  "description": "System POS Kasir Offline & Online Order Management khusus Clothing Brand & Streetwear Ilyasviel Apparel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
