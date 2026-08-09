@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;900&display=swap');
+
+:root {
+  --color-krem: #F5F0E6;
+  --color-kuning: #FFC72C;
+  --color-blue: #0A39A6;
+  --color-card: #FFFFFF;
+  --color-dark: #000000;
+}
+
+body {
+  background-color: var(--color-krem);
+  color: #000000;
+  font-family: 'Space Grotesk', 'Archivo Narrow', sans-serif;
+}
+
+/* Typography Utility Helpers */
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-archivo {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* Neubrutalism Shadow & Border Rules */
+.neo-border {
+  border: 2px solid #000000;
+}
+
+.neo-border-3 {
+  border: 3px solid #000000;
+}
+
+.neo-border-4 {
+  border: 4px solid #000000;
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.neo-shadow {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-shadow-lg {
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.neo-shadow-xl {
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.neo-btn {
+  transition: all 0.1s ease-in-out;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+/* Jagged Receipt Edge */
+.receipt-paper {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.receipt-jagged {
+  position: relative;
+}
+
+.receipt-jagged::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 10px;
+  background: radial-gradient(circle at 10px 0, transparent 10px, #ffffff 11px);
+  background-size: 20px 10px;
+  background-position: center;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0E6;
+  border-left: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A39A6;
+  border: 2px solid #000000;
+}
